@@ -1,0 +1,9 @@
+{
+  "name": "prime-planejamento",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Planejamento pedagógico bilíngue da Prime Enfant Bilingual School",
+  "scripts": {
+    "test": "node --test"
+  }
+}

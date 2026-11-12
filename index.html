@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Planejamento Prime Enfant</title>
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Pular para o conteúdo</a>
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#mes"><img src="assets/img/logo.png" alt="Prime Enfant"></a>
+      <p class="brand-sub">Planejamento 2027</p>
+
+      <p class="side-label">Turma</p>
+      <div class="chips" id="turmas"></div>
+
+      <p class="side-label">Mês</p>
+      <div class="months" id="meses"></div>
+
+      <p class="side-label">Navegar</p>
+      <nav class="nav" id="nav" aria-label="Seções"></nav>
+    </aside>
+
+    <main id="main" class="main" tabindex="-1">
+      <header class="topbar">
+        <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-controls="sidebar" aria-expanded="false"></button>
+        <div class="crumbs" id="crumbs"></div>
+        <button class="btn-ghost" id="printBtn" type="button"></button>
+      </header>
+      <div id="view" class="view"></div>
+      <footer class="foot">Prime Enfant Bilingual School · Planejamento pedagógico 2027 · LK3</footer>
+    </main>
+  </div>
+
+  <!-- Dados: cada mês de cada turma é um arquivo em data/<turma>/<ano-mes>.js -->
+  <script src="data/config.js"></script>
+  <script src="data/bncc-ei02.js"></script>
+  <script src="data/calendario-2027.js"></script>
+  <script src="data/lk3/2027-02.js"></script>
+  <script src="data/lk3/2027-03.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
